@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+header {
+  width: auto;
+  background-color: black;
+  height: 100px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+.navbar li {
+  list-style-type: none;
+  padding: 10px;
+}
+.navbar ul li a:hover {
+  cursor: pointer;
+  color: darkgreen;
+}
+.spot {
+  margin: 30px 0 0 100px;
+}
+.line {
+  height: 2px;
+  width: 20px;
+  color: white;
+}
+.container { 
+ background-color: rgb(41, 65, 171);
+ background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+ background-size: 175%;
+ background-position: 46% 4%;
+ -webkit-box-pack: center;
+ justify-content: center;
+ min-height: 846px;
+}
+h1 {
+  margin: 0;
+  color: #1ed760;
+  font-family: spotify-circular, Helvetica, Arial, sans-serif;
+  display: block;
+  text-align: center;
+}
+button {
+  background-color:  #1ed760;
+  color: transparent;
+  border-radius: 500px;
+  text-align: center;
+  padding: 15px;
+}
+button a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+button:hover {
+  background-color:  #1ed75fec;
+  color: transparent;
+  border-radius: 505px;
+  text-align: center;
+  padding: 16px;
+}
+.container  {
+  display: flex;
+  justify-content: center;
+}
