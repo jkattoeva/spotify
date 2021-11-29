@@ -4,7 +4,7 @@ body {
 * {
   box-sizing: border-box;
 }
-
+/* Навигация */
 header {
   width: auto;
   background-color: black;
@@ -40,10 +40,11 @@ header {
   margin: 30px 0 0 100px;
 }
 .line {
-  height: 2px;
+  height: 5px;
   width: 20px;
-  color: white;
+  background-color: white;
 }
+/* содержимое */
 .container { 
  background-color: rgb(41, 65, 171);
  background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
@@ -52,34 +53,198 @@ header {
  -webkit-box-pack: center;
  justify-content: center;
  min-height: 846px;
+
+ text-align: center;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+}
+.list {
+  width: 800px;
 }
 h1 {
   margin: 0;
   color: #1ed760;
-  font-family: spotify-circular, Helvetica, Arial, sans-serif;
-  display: block;
-  text-align: center;
+  width: 760px;
+  font-size: 150px;
+  font-weight: bold;
+  line-height: 1;
+  text-indent: -3.3em;
+  transform: translate(125px, 0px);
+  letter-spacing: -0.5rem;
+  
 }
+/* comment */
+.mill {
+  font-size: 18px;
+  line-height: 25px;
+  padding-bottom: 38px;
+  color: #1ed760;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
 button {
-  background-color:  #1ed760;
+  background-color: var(--background-base,#1ed760);
   color: transparent;
   border-radius: 500px;
-  text-align: center;
-  padding: 15px;
+  font-size: inherit;
+  padding: 15px 30px;
 }
 button a {
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
 }
-button:hover {
-  background-color:  #1ed75fec;
+ button:hover {
+  background-color: var(--background-base,#1ed75fbb);
   color: transparent;
   border-radius: 505px;
-  text-align: center;
-  padding: 16px;
-}
+  font-size: inherit;
+  padding: 18px 32px;
+} 
 .container  {
   display: flex;
   justify-content: center;
+}
+/* подвал */
+/* #navbar{
+  padding: 50px 0 20px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+footer a {
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: #1ed760;
+  cursor: pointer;
+}
+.spot-d {
+  width: 16.66666667%;
+  padding: 0 15px;
+}
+.options {
+  display: flex;
+  flex-direction: row;
+
+}
+.opt dl {
+  width: 50%;
+}
+.opt dt a {
+  color: #919496;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.4;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.opt dd a {
+  margin-left: 0;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Circular,spotify-circular,Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  padding: 3px 0 15px;
+}
+.sos {
+  margin: 120px 15px 15px; 
+}
+.sos span {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #222326;
+} */
+.container-2 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: .5rem;
+}
+[class^="col"]{
+  padding: 0 .8rem;
+}
+.row {
+  display: flex;
+  gap: .5rem;
+  flex-wrap: wrap;
+}
+
+footer{
+  background-color: black;
+  margin: 0;
+
+}
+#navbar ul li a  {
+  display: inline-block;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  padding: 3px 0 15px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#navbar ul li {
+  color: gray;
+  font-weight: 800;
+  font-size: 12px;
+  list-style-type: none;
+}
+
+#navbar ul li a:hover{
+  color: #1ed760;
+}
+.inline{
+  display: inline-flex;
+}
+.img{
+  margin-bottom: -45px;
+  width: 250px;
+}
+.navbar2{
+  display: flex;
+  color: white;
+  
+  margin-left: -90px;
+  justify-content: space-around;
+  padding: 30px;
+}
+.navbar2 ul li  {
+  display: inline-flex;
+}
+.navbar2 ul li a {
+ color: gray;
+ font-size: 12px;
+ padding: 10px 15px;
+ text-decoration: none;
+ display: flex;
+ justify-content: left;
+ font-weight: 700;
+ font-family: Arial,Helvetica,sans-serif;
+ font-style: normal;
+}
+.navbar2 ul li a:hover {
+  color: #1ed760;
+}
+ul span{
+  font-size: 12px;
+  color: gray;
+}
+.alignment{
+  margin-left:-85px;
+}
+.cont{
+  justify-content: flex-end;
+}
+.cont2{
+  color: white;
+
+}
+.cont2:hover{
+  color: #1ed760;
 }
